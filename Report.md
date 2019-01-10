@@ -1,7 +1,6 @@
 [//]: # (Image References)
 
 [image1]: https://raw.githubusercontent.com/abilashamarthaluri/Tennis-drlnd/master/images/tennis.jpg "Report for Tennis"
-[image2]: https://blog.openai.com/content/images/2017/06/nipsdiagram_2.gif
 
 ## Report
 
@@ -15,7 +14,7 @@ There are both Actor, Critic and their respective target networks, similar to DD
 
 The key idea is Actor's are only exposed to their local observations(same agent), where as the critics are given access to the policies of other agents. Critic helps the actor decide what actions to reinforce during training. 
 
-Below is a animation of how the agents are trained and how it differs at execution time from [OPENAI](image2)
+Here is a animation of how the agents are trained and how it differs at execution time from [OPENAI](https://blog.openai.com/content/images/2017/06/nipsdiagram_2.gif)
 
 
 Actor Network ==> BatchNorm(States) --> FC1(state_size * 128) --> FC2 (128 * 64) --> FC3 (64 * action_size).
